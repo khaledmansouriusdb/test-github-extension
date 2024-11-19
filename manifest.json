@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Startup URL GET Caller",
+  "version": "1.0",
+  "description": "Sends a GET request when installed and every time Chrome starts.",
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://example.com/*"
+  ]
+}
